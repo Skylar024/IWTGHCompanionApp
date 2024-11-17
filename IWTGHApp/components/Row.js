@@ -1,13 +1,11 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-import {View, Text } from "react-native";
-import styles from "./styles";
+import { View } from "react-native";
+import styles from "../styles";
 
 export default function Box({ children }) {
     return (
-        <View style={styles.box}>
-            <Text style={styles.boxText}>{children}</Text>
-        </View>
+        <View style={styles.row}>{children}</View>
     );
 }
 Box.propTypes = {

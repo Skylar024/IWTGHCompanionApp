@@ -1,11 +1,35 @@
 import { Platform, StyleSheet, StatusBar } from "react-native";
 
 export default StyleSheet.create({
+    wrapper: {
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: "center",
+        
+        
+        ...Platform.select({
+            ios: { paddingTop: 20 },
+            android: { paddingTop: StatusBar.currentHeight },
+        }),
+    },
+    titleContainer: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#f90000",
+
+
+        ...Platform.select({
+            ios: { paddingTop: 40 },
+            android: { paddingTop: StatusBar.currentHeight },
+        }),
+    },
     container: {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        
+        flexGrow: 7,
+
         ...Platform.select({
             ios: { paddingTop: 40 },
             android: { paddingTop: StatusBar.currentHeight },
@@ -14,12 +38,13 @@ export default StyleSheet.create({
     text: {
         fontSize: 24,
         fontWeight: 'bold',
-        
+        backgroundColor: "darkslategray",
+
     },
     text2: {
         fontSize: 30,
         fontWeight: "200",
-
+        
     },
     box: {
         height: 100,
