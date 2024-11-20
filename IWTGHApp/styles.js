@@ -17,7 +17,7 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#f90000",
+        backgroundColor: "#0000f9",
 
 
         ...Platform.select({
