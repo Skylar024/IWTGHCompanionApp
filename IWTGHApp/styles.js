@@ -10,6 +10,7 @@ export default StyleSheet.create({
         ...Platform.select({
             ios: { paddingTop: 20 },
             android: { paddingTop: StatusBar.currentHeight },
+            web: { paddingTop: 20 },
         }),
     },
     titleContainer: {
@@ -22,6 +23,7 @@ export default StyleSheet.create({
         ...Platform.select({
             ios: { paddingTop: 40 },
             android: { paddingTop: StatusBar.currentHeight },
+            web: { paddingTop: 20 },
         }),
     },
     container: {
@@ -33,6 +35,7 @@ export default StyleSheet.create({
         ...Platform.select({
             ios: { paddingTop: 40 },
             android: { paddingTop: StatusBar.currentHeight },
+            web: { paddingTop: 20 },
         }),
     },
     text: {

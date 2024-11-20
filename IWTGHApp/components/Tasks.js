@@ -20,7 +20,7 @@ export default function Tasks({ navigation }) {
                 <Row>
                     <Box>Cleaning</Box>
                     <Box>Load Dishwasher</Box>
-                    <Box></Box>
+                    <Box>Load Traywasher</Box>
                 </Row>
             </View>
         </View>

@@ -37,6 +37,17 @@ export default function App() {
           <Tab.Screen name="Tasks" component={Tasks} />
         </Drawer.Navigator>
       )}
+
+      {Platform.OS == "web" && (
+        <Drawer.Navigator>
+          <Drawer.Screen name="Home" component={Home} />
+          <Drawer.Screen name="Ghosts" component={Ghosts} />
+          <Drawer.Screen name="Lore Pages" component={Lore_Pages} />
+          <Drawer.Screen name="Characters" component={Characters} />
+          <Tab.Screen name="Maps" component={Maps} />
+          <Tab.Screen name="Tasks" component={Tasks} />
+        </Drawer.Navigator>
+      )}
     </NavigationContainer>
   );
 }
